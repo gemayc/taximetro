@@ -9,15 +9,27 @@ from main import calculate_fare
 
 class TestCalculateFare(unittest.TestCase):
     def test_calculate_fare_basic(self):
-        result = calculate_fare(10, 10)
+        prices = {
+            "stopped":0.02,
+            "moving": 0.05
+        }
+        result = calculate_fare(10, 10, prices)
         self.assertEqual(result, 0.2 + 0.5)  # 10 * 0.02 + 10 * 0.05
     
     def test_calculate_fare_only_stopped(self):
-        result= calculate_fare(10, 0)
+        prices = {
+            "stopped":0.02,
+            "moving": 0.05
+        }
+        result= calculate_fare(10, 0, prices)
         self.assertEqual(result, 0.2)
     
     def test_calculate_fare_only_moving(self):
-        result= calculate_fare(0, 10)
+        prices = {
+            "stopped":0.02,
+            "moving": 0.05
+        }
+        result= calculate_fare(0, 10, prices)
         self.assertEqual(result, 0.5) 
 
 if __name__ == "__main__":
