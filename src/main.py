@@ -27,7 +27,8 @@ def calculate_fare(seconds_stopped, seconds_moving, prices):
     - Moving: 0.05 €/s
     night
       - Stopped: 0.03 €/s
-     - Moving: 0.06 €/s . etc
+     - Moving: 0.06 €/s .
+     etc....
     """
     #declaro dos variables
     stopped_price = prices["stopped"]
@@ -39,7 +40,7 @@ def calculate_fare(seconds_stopped, seconds_moving, prices):
     print(f":euro: [bold green]Total so far: €{fare:.2f}[/bold green]")
 
     return fare
-
+#esta funcion es para el historico que he creado en la carpeta data
 def save_trip_hstory(stopped_time, moving_time, total_fare ):
     """
     Guarda un registro del viaje en un archivo de texto plano.
@@ -74,7 +75,6 @@ def taximeter():
     print(":check_mark: [green]finish[/green]")
     print(":cross_mark: [red]exit[/red]\n")
     
-   
     
     trip_active = False
     start_time = 0
@@ -141,7 +141,8 @@ def taximeter():
             total_fare = calculate_fare(stopped_time, moving_time, prices)
             logging.info(
              f"Trip finished. Stopped: {stopped_time:.1f}s, Moving: {moving_time:.1f}s, Total fare: €{total_fare:.2f}" )
-            #guardamos el viaje en el historico llamamos a la funcion que hemos echo antes
+            
+            #guardamos el viaje en el historico, llamamos a la funcion que hemos echo antes
             save_trip_hstory(stopped_time, moving_time,total_fare)
 
             table = Table(title="🚕 Trip Summary", show_header=True, header_style="bold magenta")
