@@ -1,5 +1,5 @@
 import time                      
-from pricing import load_prices   # Importamos la función que carga las tarifas desde config_precios.json
+
 
 
 
