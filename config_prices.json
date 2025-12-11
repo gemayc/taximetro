@@ -1,13 +1,13 @@
 {
-  "normal": {
+  "Normal": {
     "stopped": 0.02,
     "moving": 0.05
   },
-  "high_demand": {
+  "Alta_demanda": {
     "stopped": 0.04,
     "moving": 0.08
   },
-  "night": {
+  "Nocturno": {
     "stopped": 0.03,
     "moving": 0.06
   }
