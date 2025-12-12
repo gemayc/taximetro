@@ -468,7 +468,7 @@ Este proyecto es con fines educativos y no tiene licencia comercial.
 **Desarrollado por:** Gema Yébenes
 
 - 🎓 Proyecto educativo del Bootcamp de IA
-- 💼 [LinkedIn](https://www.linkedin.com/in/gema-yebenes-83b6a6100/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/gema-y%C3%A9benes-caballero-83b6a6100/)
 - 🐙 [GitHub](https://github.com/gemayc)
 ---
 
