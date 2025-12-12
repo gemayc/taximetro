@@ -75,7 +75,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             type=ref,event=branch     # Etiqueta con el nombre de la rama
-            type=sha,format=short     # Etiqueta con el código único del commit
+            
       
       - name: Construir y Subir
         uses: docker/build-push-action@v5
